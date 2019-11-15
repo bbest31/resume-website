@@ -1,0 +1,52 @@
+.header-bg {
+    background: #3D3D3D;
+}
+
+.r-bg {
+    background: #447490;
+}
+
+.name-header {
+    color: #7cbee5;
+    font-size: 48px;
+}
+
+.title-header {
+    color: #F2F2F2;
+    font-size: 36px;
+}
+
+.resume-btn {
+    background-color: transparent;
+    color: #7cbee5;
+    padding: 14px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #7cbee5;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.resume-btn:hover {
+    background-color: #7cbee5;
+    color: #F2F2F2;
+}
+
+.y-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.shrink-wrap {
+    width: fit-content;
+}
+
+.btn-holder {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
