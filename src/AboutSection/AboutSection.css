@@ -2,8 +2,19 @@
     background: #282828;
 }
 
-h1 {
+#about-section {
+    margin-bottom: 2.5%;
+    width: 95%;
+}
+
+#about-title {
+    color: blue;
+    font-size: 36px;
+}
+
+#about-header {
     color: #f2f2f2;
+    font-size: 64px;
 }
 
 p {

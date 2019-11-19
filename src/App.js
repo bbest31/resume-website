@@ -4,7 +4,7 @@ import HeaderSection from './HeaderSection/HeaderSection';
 import AboutSection from './AboutSection/AboutSection';
 function App() {
   return (
-    <div className="App">
+    <div className="App main-bg">
       <HeaderSection />
       <AboutSection />
     </div>
