@@ -8,15 +8,20 @@
 }
 
 #about-title {
-    color: blue;
+    color: #2F80ED;
     font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 #about-header {
     color: #f2f2f2;
-    font-size: 64px;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 p {
     color: #f2f2f2;
+    font-family: 'Lato', sans-serif;
 }
