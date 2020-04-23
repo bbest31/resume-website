@@ -1,0 +1,15 @@
+.navbar-bg {
+    background: #282828;
+}
+
+.nav-opt {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.nav-opt-active {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
