@@ -20,11 +20,12 @@ export default class FooterSection extends Component {
                         <a href="https://github.com/bbest31"><i className="fab fa-github icon-light mx-3"></i></a>
                         <a href="https://www.linkedin.com/in/brandon-best-768297126/"><i className="fab fa-linkedin icon-light mx-3"></i></a>
                         <a href="https://stackoverflow.com/users/6495051/b-best"><i className="fab fa-stack-overflow icon-light mx-3"></i></a>
+                        <a href="https://twitter.com/thebrandonmbest"><i className="fab fa-twitter icon-light mx-3"></i></a>
                     </div>
                 </div>
                 <div className="row pb-5">
                     <div className="col-12 text-center">
-                        <a href="mailto:bbest.dev@gmail.com" className="email-text"><u>bbest.dev@gmail.com</u></a>
+                        <a href="mailto:bbest.dev@gmail.com" className="email-text"><u>Email Me</u></a>
                     </div>
                 </div>
             </div>

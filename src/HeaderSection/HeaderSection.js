@@ -18,7 +18,7 @@ export default class HeaderSection extends Component {
                 <div className="row px-5 table-display">
                     <div className="col-md-6 col-lg-6 text-left y-center">
                         <h1 className="name-header">Brandon Best</h1>
-                        <h2 className="title-header py-4">Software Developer & Entrepreneur</h2>
+                        <h2 className="title-header py-4">Software Developer</h2>
                         <div className="btn-holder">
                             <motion.div className="pt-3 shrink-wrap" whileHover={{ scale: 1.2, x: 5, rotate: [0, 2, -2, 0] }} transition={{ type: 'spring' }}>
                                 <a className="resume-btn" onClick={() => this.resumeDownloaded()} href={Resume} download="">RESUMÉ</a>

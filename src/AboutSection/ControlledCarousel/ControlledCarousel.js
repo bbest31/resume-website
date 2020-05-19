@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer, MDBCarouselCaption } from 'mdbreact';
-import slide1 from '../../assets/slide1.jpg';
+import slide1 from '../../assets/slide1.png';
 import slide2 from '../../assets/slide2.jpg';
 import slide3 from '../../assets/slide3.jpg';
 import slide4 from '../../assets/slide4.jpg';
@@ -27,8 +27,8 @@ const ControlledCarousel = () => {
                             />
                         </MDBView>
                         <MDBCarouselCaption>
-                            <h3 className="h3-responsive">The Walrus</h3>
-                            <p>Last day of my internship in Toronto</p>
+                            {/* <h3 className="h3-responsive">The Brandon Best Podcast</h3> */}
+                            <p>Started a podcast about new tech and science</p>
                         </MDBCarouselCaption>
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="2">

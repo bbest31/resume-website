@@ -15,10 +15,7 @@ export default class NavBar extends Component {
                             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item nav-opt">
-                            <a class="nav-link" href="blog">Blog</a>
-                        </li>
-                        <li class="nav-item nav-opt">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Podcast</a>
+                            <a class="nav-link" href="https://thebrandonbestpodcast.podbean.com/" target="new" tabindex="-1">Podcast</a>
                         </li>
                     </ul>
                 </div>
