@@ -13,6 +13,7 @@ import slackHighFiveCommand from '../../assets/slackhighfivecommand.png';
 import podcastOne from '../../assets/podcast1.jpg';
 import podcastTwo from '../../assets/podcast2.jpg';
 import podcastThree from '../../assets/podcast3.jpg';
+import ctwOne from '../../assets/clinicaltrialwatch.PNG';
 
 export default function PortfolioModal(props) {
 
@@ -105,6 +106,37 @@ export default function PortfolioModal(props) {
                         <br />
                         Weekly podcast I did with 3 friends talking about young entreprenuership and trying to break into the professional world.
                         Often interviews young people with their own businesses and talked to them about their journey and things they learned along the way.
+                    </p>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={props.onHide}>Close</Button>
+                </Modal.Footer>
+            </Modal>
+        );
+    } else if (proj === "ctw") {
+        return (
+            <Modal {...props} size="lg" aria-labelledby="container-modal-title-vcenter" centered>
+                <Modal.Header className="px-0 py-0">
+                    <Carousel indicators={false}>
+                        <Carousel.Item>
+                            <img className="d-block w-100" src={ctwOne} alt="Podcast One" />
+                        </Carousel.Item>
+                        {/* <Carousel.Item>
+                            <img className="d-block w-100" src={podcastTwo} alt="Podcast Two" />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="d-block w-100" src={podcastThree} alt="Podcast Three" />
+                        </Carousel.Item> */}
+                    </Carousel>
+                </Modal.Header>
+                <Modal.Body>
+                    <h4>Clinical Trial Watch</h4>
+                    <p className="modal-text">
+                        <strong>Role: Creator/Full Stack Developer</strong>
+                        <br />
+                        Went searching on the Canadian governments API store to find APIs to work with to create some website. Found this one API which connected to the Clinical Trial application
+                        database from Health Canada. I developed this website to help people monitor the clinical drug trial status of applications where the drugs are looking to treat COVID-19. This includes
+                        vaccines in which I was anticipating people would want to be informed about.
                     </p>
                 </Modal.Body>
                 <Modal.Footer>

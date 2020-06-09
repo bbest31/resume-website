@@ -6,6 +6,9 @@ import natImg from '../assets/neuralbertatech.png';
 import startupsImg from '../assets/startupspodcast.jpg';
 import slack from '../assets/slack.png';
 import napchat from '../assets/napchat.png';
+import personalwebsite from '../assets/personalwebsite.PNG';
+import ctw from '../assets/clinicaltrialwatch.PNG';
+import ownable from '../assets/ownablemobile.png';
 import robot from '../assets/chessrobot.jpg';
 import { motion } from 'framer-motion';
 import firebase from '../firebase';
@@ -14,7 +17,7 @@ export default class PortfolioSection extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { isXpertzOpen: false, isSlackOpen: false, isPodcastOpen: false };
+        this.state = { isXpertzOpen: false, isSlackOpen: false, isPodcastOpen: false, isCTWOpen: false };
     }
 
     toggleXpertzModal = (event) => {
@@ -41,6 +44,14 @@ export default class PortfolioSection extends Component {
             isPodcastOpen: !this.state.isPodcastOpen
         });
     }
+    toggleCTWModal = (event) => {
+        if (!this.state.isCTWOpen) {
+            firebase.analytics().logEvent('ctw_modal_opened', { date: new Date().toLocaleString() });
+        }
+        this.setState({
+            isCTWOpen: !this.state.isCTWOpen
+        });
+    }
     neuralbertatechClicked = () => {
         firebase.analytics().logEvent('NeurAlbertaTech_clicked', {date: new Date().toLocaleString()})
     }
@@ -51,12 +62,17 @@ export default class PortfolioSection extends Component {
         firebase.analytics().logEvent('napchat_clicked', {date: new Date().toLocaleString()})
     }
 
+    ownableClicked = () => {
+        firebase.analytics().logEvent('ownable_clicked', {date: new Date().toLocaleString()})
+    }
+
     render() {
         return (
             <div id="portfolio-section" className="main-container container-fluid mx-auto shadow">
                 <PortfolioModal show={this.state.isXpertzOpen} project="xpertz" onHide={() => this.toggleXpertzModal()} />
                 <PortfolioModal show={this.state.isPodcastOpen} project="podcast" onHide={() => this.togglePodcastModal()} />
                 <PortfolioModal show={this.state.isSlackOpen} project="slack" onHide={() => this.toggleSlackModal()} />
+                <PortfolioModal show={this.state.isCTWOpen} project="ctw" onHide={() => this.toggleCTWModal()}/>
                 <div className="row text-center pb-5">
                     <div className="col-12">
                         <h3 className="portfolio-title pt-5">Portfolio</h3>
@@ -64,6 +80,42 @@ export default class PortfolioSection extends Component {
                     </div>
                 </div>
                 <div className="row">
+                    <div className="col-12 d-flex justify-content-center">
+                        <div className="card-deck">
+                            <motion.div whileHover={{ scale: 1.05 }}>
+                                <div className="card" style={{ width: "18rem" }}>
+                                    <img className="card-img-top" src={ownable} alt="Ownable" />
+                                    <div className="card-body card-color">
+                                        <h5 className="card-title">Ownable</h5>
+                                        <p className="card-text">Fractional investment platform for real estate developments and properties.</p>
+                                        <a href="https://getownable.co/" onClick={() => this.ownableClicked()} target="_blank" rel="noopener noreferrer" className="btn btn-outline-light" >Website</a>
+                                    </div>
+                                </div>
+                            </motion.div>
+                            <motion.div whileHover={{ scale: 1.05 }}>
+                                <div className="card" style={{ width: "18rem" }}>
+                                    <img className="card-img-top" src={ctw} alt="Clinical Trial Watch" />
+                                    <div className="card-body card-color">
+                                        <h5 className="card-title">Clinical Trial Watch</h5>
+                                        <p className="card-text">Developed website to track clinical drug trial status of drugs targetting COVID-19.</p>
+                                        <button className="btn btn-outline-light" onClick={() => this.toggleCTWModal()}>More</button>
+                                    </div>
+                                </div>
+                            </motion.div>
+                            <motion.div whileHover={{ scale: 1.05 }}>
+                                <div className="card" style={{ width: "18rem" }}>
+                                    <img className="card-img-top" src={personalwebsite} alt="Personal Website" />
+                                    <div className="card-body card-color">
+                                        <h5 className="card-title">Personal Website</h5>
+                                        <p className="card-text">Created this personal website to show off my skills and portfolio. Made it using React.</p>
+                                        <a href="#" className="btn btn-outline-light" >You're Here!</a>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row pt-4 pb-5">
                     <div className="col-12 d-flex justify-content-center">
                         <div className="card-deck">
                             <motion.div whileHover={{ scale: 1.05 }}>
