@@ -108,7 +108,7 @@ export default class PortfolioSection extends Component {
                                     <div className="card-body card-color">
                                         <h5 className="card-title">Personal Website</h5>
                                         <p className="card-text">Created this personal website to show off my skills and portfolio. Made it using React.</p>
-                                        <a href="#" className="btn btn-outline-light" >You're Here!</a>
+                                        <a href="https://github.com/bbest31/resume-website" className="btn btn-outline-light" >Repo</a>
                                     </div>
                                 </div>
                             </motion.div>
